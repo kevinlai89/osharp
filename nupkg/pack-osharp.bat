@@ -1,4 +1,5 @@
 "..\.nuget\NuGet.exe" "pack" "..\src\OSharp.Utility\OSharp.Utility.csproj" -Properties Configuration=Debug -IncludeReferencedProjects
+"..\.nuget\NuGet.exe" "pack" "..\src\OSharp.Utility.Wpf\OSharp.Utility.Wpf.csproj" -Properties Configuration=Debug -IncludeReferencedProjects
 "..\.nuget\NuGet.exe" "pack" "..\src\OSharp.Core\OSharp.Core.csproj" -Properties Configuration=Debug -IncludeReferencedProjects
 "..\.nuget\NuGet.exe" "pack" "..\src\OSharp.Data.Entity\OSharp.Data.Entity.csproj" -Properties Configuration=Debug -IncludeReferencedProjects
 "..\.nuget\NuGet.exe" "pack" "..\src\OSharp.Data.Entity.MySql\OSharp.Data.Entity.MySql.csproj" -Properties Configuration=Debug -IncludeReferencedProjects
@@ -10,9 +11,11 @@
 "..\.nuget\NuGet.exe" "pack" "..\src\OSharp.Autofac.Mvc\OSharp.Autofac.Mvc.csproj" -Properties Configuration=Debug -IncludeReferencedProjects
 "..\.nuget\NuGet.exe" "pack" "..\src\OSharp.Autofac.WebApi\OSharp.Autofac.WebApi.csproj" -Properties Configuration=Debug -IncludeReferencedProjects
 "..\.nuget\NuGet.exe" "pack" "..\src\OSharp.Autofac.SignalR\OSharp.Autofac.SignalR.csproj" -Properties Configuration=Debug -IncludeReferencedProjects
+"..\.nuget\NuGet.exe" "pack" "..\src\OSharp.Autofac.Hangfire\OSharp.Autofac.Hangfire.csproj" -Properties Configuration=Debug -IncludeReferencedProjects
 "..\.nuget\NuGet.exe" "pack" "..\src\OSharp.App.Local\OSharp.App.Local.csproj" -Properties Configuration=Debug -IncludeReferencedProjects
 "..\.nuget\NuGet.exe" "pack" "..\src\OSharp.AutoMapper\OSharp.AutoMapper.csproj" -Properties Configuration=Debug -IncludeReferencedProjects
 "..\.nuget\NuGet.exe" "pack" "..\src\OSharp.Logging.Log4Net\OSharp.Logging.Log4Net.csproj" -Properties Configuration=Debug -IncludeReferencedProjects
 "..\.nuget\NuGet.exe" "pack" "..\src\OSharp.Permissions\OSharp.Permissions.csproj" -Properties Configuration=Debug -IncludeReferencedProjects
 "..\.nuget\NuGet.exe" "pack" "..\src\OSharp.Permissions.OAuth\OSharp.Permissions.OAuth.csproj" -Properties Configuration=Debug -IncludeReferencedProjects
 "..\.nuget\NuGet.exe" "pack" "..\src\OSharp.Permissions.OAuth.Client\OSharp.Permissions.OAuth.Client.csproj" -Properties Configuration=Debug -IncludeReferencedProjects
+"..\.nuget\NuGet.exe" "pack" "..\src\OSharp.Redis\OSharp.Redis.csproj" -Properties Configuration=Debug -IncludeReferencedProjects

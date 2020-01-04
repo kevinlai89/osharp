@@ -32,7 +32,7 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>none</DebugType>
+    <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
@@ -40,6 +40,7 @@
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Release\OSharp.Utility.XML</DocumentationFile>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
@@ -63,6 +64,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -85,6 +87,7 @@
     <Compile Include="Data\DateTimeRange.cs" />
     <Compile Include="Data\IOSharpResult.cs" />
     <Compile Include="Data\JsonHelper.cs" />
+    <Compile Include="Data\MathExpression.cs" />
     <Compile Include="Data\MathHelper.cs" />
     <Compile Include="Data\OperationResult.cs" />
     <Compile Include="Data\OperationResultType.cs" />
@@ -103,10 +106,12 @@
     <Compile Include="Drawing\ValidateCoder.cs" />
     <Compile Include="Drawing\ValidateCodeType.cs" />
     <Compile Include="Dynamic\Exposed.cs" />
+    <Compile Include="Extensions\ArrayExtensions.cs" />
     <Compile Include="Extensions\BitmapExtensions.cs" />
     <Compile Include="Extensions\DateTimeExtensions.cs" />
-    <Compile Include="Filter\DataPage.cs" />
+    <Compile Include="Filter\PageResult.cs" />
     <Compile Include="Net\NetHelper.cs" />
+    <Compile Include="Reflection\ComLibraryLoader.cs" />
     <Compile Include="Reflection\FastInvokeHandler.cs" />
     <Compile Include="Dynamic\MetaObject.cs" />
     <Compile Include="Exceptions\ExceptionMessage.cs" />
@@ -151,6 +156,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Reflection\IComClassFactory.cs" />
+    <Compile Include="Reflection\NativeMethods.cs" />
+    <Compile Include="Reflection\SyncLocker.cs" />
+    <Compile Include="Secutiry\AesHelper.cs" />
     <Compile Include="Secutiry\CommunicationCryptor.cs" />
     <Compile Include="Secutiry\DesHelper.cs" />
     <Compile Include="Secutiry\HashHelper.cs" />
